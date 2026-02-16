@@ -1,0 +1,21 @@
+#version 330 core
+out vec4 FragColor;
+uniform float timei;
+in vec3 ourColor;
+
+void main()
+{
+    FragColor = vec4(ourColor*timei, 1.0f);
+}
+//vecn 		float
+//bvecn		bool
+//ivecn		int
+//uvecn		unsigned int
+//dvecn		double
+//Basic float double int uint bool
+//.x .y .z .w  
+//.r .g .b .a
+//.s .t .p .q
+// vertex：out  ;fragment：in
+// out&in `s gets only in glsl
+//uniform can everytime achieve values transform;
