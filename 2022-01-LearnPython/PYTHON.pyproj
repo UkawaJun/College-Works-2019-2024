@@ -1,0 +1,82 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2ae851f8-46c5-44a7-8759-f37240dfc5f8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>pygame2.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PYTHON</Name>
+    <RootNamespace>PYTHON</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Error.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="game.py" />
+    <Compile Include="main.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pygame1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pygame2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pygame3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pygbutton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PYTHON1.py" />
+    <Compile Include="q---PYTHON.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PYTHON2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PYTHON3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PYTHON4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PYTHON5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PYTHON6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Show.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vipgame2.py" />
+    <Compile Include="wall.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="setting.py" />
+    <Compile Include="是男人就下一百层.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
